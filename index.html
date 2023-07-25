@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <title>Pixyfy</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1 aria-level="1">
+          <a href="./index.html" title="Go to Pixify homepage">PIXIFY</a>
+        </h1>
+      </div>
+      <nav class="nav-container">
+        <a href="./submissions.html" title="View 2023 submissions"
+          >2023 Submissions</a
+        >
+        <a href="./about.html" title="About Pixify">About</a>
+      </nav>
+    </header>
+    <main class="background-image-container">
+      <section class="description-section">
+        <div class="description-box">
+          <p>
+            Join our photography contest and showcase your talent to the world!
+            Immerse yourself in a community of photographers, where creativity
+            and passion come together. Share your best shots, be inspired by
+            others, and have a chance to win amazing prizes. Enter now and take
+            the first step to becoming a recognized photographer.
+          </p>
+        </div>
+        <div class="main-submit-box">
+          <button onclick="mainSubmit()" type="button">SUBMIT NOW</button>
+        </div>
+      </section>
+    </main>
+    <script>
+      const mainSubmit = () => {
+        window.location.href = "./submissions.html";
+      };
+    </script>
+  </body>
+</html>

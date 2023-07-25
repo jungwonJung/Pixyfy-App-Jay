@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: 100%;
+}
+
+:root {
+  /* COLORS */
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-blue: #7bffe9;
+  --navy: #2a3b49;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  body,
+  header,
+  section,
+  footer {
+    min-width: 325px;
+    margin: 0 auto;
+  }
+}

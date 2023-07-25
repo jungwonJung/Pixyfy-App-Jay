@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pixyfy-About</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1><a href="./index.html">PIXIFY</a></h1>
+      </div>
+      <nav class="nav-container">
+        <a href="./submissions.html">2023 Submissions</a>
+        <a href="./about.html">About</a>
+        <div class="light-dark-mode-box">
+          <button class="theme-button">Dark Mode</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section class="top-article-container">
+          <div class="top-article-title">
+            <h1>ABOUT US</h1>
+          </div>
+          <div class="top-article-description">
+            <p>
+              Welcome to Pixify, the ultimate destination for photography
+              enthusiasts! We are a community of passionate photographers who
+              believe in the power of capturing life's moments and sharing them
+              with the world.
+            </p>
+          </div>
+        </section>
+        <section class="main-article-container">
+          <div class="left-side-article-container">
+            <div>
+              <p>
+                Our mission is to provide a platform for photographers to
+                showcase their work, connect with like-minded individuals, and
+                be recognised for their talent. That's why we created Pixify - a
+                photography contest where photographers from all walks of life
+                can enter their best shots and have a chance to win amazing
+                prizes.
+              </p>
+            </div>
+            <div>
+              <p>
+                At Pixify, we believe that photography is not just a hobby but
+                an art form that can tell a story, evoke emotions, and leave a
+                lasting impression. Whether you're a professional photographer
+                or just starting out, we welcome you to join us on this journey
+                and share your unique perspective with the world.
+              </p>
+            </div>
+            <div>
+              <p>
+                So what are you waiting for? Enter our photography contest
+                today, connect with other photographers, and take your passion
+                to the next level with Pixify. We can't wait to see what you
+                have in store!
+              </p>
+            </div>
+            <div>
+              <p>DEADLINE: 17TH FEBRUARY 2023</p>
+            </div>
+            <button
+              id="submit-btn"
+              class="submit-button"
+              onclick="mainSubmit()"
+            >
+              SUBMIT NOW
+            </button>
+          </div>
+          <div class="main-article-img-container">
+            <img src="../assets/about.jpg" alt="about-image" />
+          </div>
+        </section>
+      </article>
+    </main>
+    <script type="module" src="../scripts/main.js"></script>
+    <script>
+      const mainSubmit = () => {
+        window.location.href = "./submissions.html";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  height: 60px;
+  background-color: var(--navy);
+  justify-content: space-between;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h1 a {
+  padding: 0;
+  margin: 0;
+  color: var(--text-blue);
+  font-size: 36px;
+  font-weight: 400;
+  width: 20%;
+  text-decoration: none;
+}
+
+.nav-container {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 50px;
+  box-shadow: inset 0 0 0 0 var(--text-blue);
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-container a:hover {
+  box-shadow: inset 170px 0 0 0 var(--text-blue);
+  color: var(--text-black);
+  cursor: pointer;
+}
+
+.light-dark-mode-box button {
+  color: var(--text-blue);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 50px;
+  box-shadow: inset 0 0 0 0 var(--text-blue);
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.light-dark-mode-box button:hover {
+  box-shadow: inset 250px 0 0 0 var(--text-blue);
+  color: var(--text-black);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav-container a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  header {
+    padding: 0 15px;
+  }
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-container a {
+    padding: 0;
+    margin: 0;
+  }
+}
